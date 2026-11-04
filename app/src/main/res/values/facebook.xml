@@ -1,0 +1,6 @@
+<resources>
+ <!-- Valores públicos de configuración del cliente. Nunca pegues el App Secret aquí. -->
+ <string name="facebook_app_id" translatable="false">0</string>
+ <string name="facebook_client_token" translatable="false">CONFIGURAR</string>
+ <string name="fb_login_protocol_scheme" translatable="false">fb0</string>
+</resources>

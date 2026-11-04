@@ -1,0 +1,10 @@
+<resources>
+    <string name="template_title">Lectura de estudios</string>
+    <string name="template_device">Nota</string>
+    <string name="template_value"></string>
+    <string name="save">Guardar</string>
+    <string-array name="groups">
+        <item>Notas</item>
+        <item>Curso A</item>
+        <item>Curso B</item>
+    </string-array></resources>

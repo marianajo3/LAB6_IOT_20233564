@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/template_title" android:textSize="24sp"/>
+ <EditText android:id="@+id/input_device" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/template_device" android:inputType="text" android:autofillHints=""/>
+ <Spinner android:id="@+id/input_group" android:layout_width="match_parent" android:layout_height="48dp" android:entries="@array/groups"/>
+ <EditText android:id="@+id/input_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/template_value" android:inputType="numberDecimal|numberSigned" android:autofillHints=""/>
+ <Button android:id="@+id/save_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/save"/>
+</LinearLayout>
