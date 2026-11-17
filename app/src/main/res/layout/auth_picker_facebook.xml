@@ -1,0 +1,10 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="#F4F7F9">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:padding="28dp">
+<ImageView android:layout_width="88dp" android:layout_height="88dp" android:src="@drawable/ic_logo" android:contentDescription="Logo de Mi tiempo de estudio"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mi tiempo de estudio" android:textSize="28sp" android:textStyle="bold" android:gravity="center" android:padding="16dp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Organiza tus sesiones y descubre cómo estudias." android:textSize="16sp" android:gravity="center" android:paddingBottom="24dp"/>
+<Button android:id="@+id/auth_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Iniciar sesión o registrarme con correo" android:textAllCaps="false"/>
+<Button android:id="@+id/auth_google" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Continuar con Google" android:textAllCaps="false"/>
+<Button android:id="@+id/auth_facebook" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Continuar con Facebook" android:textAllCaps="false"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Para recuperar tu contraseña, elige correo, escribe tu dirección y toca ¿Olvidaste tu contraseña?" android:paddingTop="20dp" android:gravity="center"/>
+</LinearLayout></ScrollView>

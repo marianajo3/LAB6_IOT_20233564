@@ -1,9 +1,5 @@
-// Solo se resuelve el plugin de Google al pedir la variante conectada.
 buildscript {
-    ext {
-        agp_version = '9.1.1'
-    }
-    repositories { google(); mavenCentral() }
-    dependencies { if (project.findProperty('firebase') == 'true') classpath 'com.google.gms:google-services:4.4.4' }
+ repositories { google(); mavenCentral() }
+ dependencies { classpath 'com.google.gms:google-services:4.4.4' }
 }
-plugins { id 'com.android.application' version '9.1.1' apply false }
+plugins { id 'com.android.application' version '9.3.3' apply false }

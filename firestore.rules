@@ -4,16 +4,15 @@ service cloud.firestore {
   function owner(uid) { return request.auth != null && request.auth.uid == uid; }
   function valid() {
    let d = request.resource.data;
-   return d.keys().hasAll(['device','group','date','value','notes'])
-    && d.keys().hasOnly(['device','group','date','value','notes'])
-    && d.device is string && d.device.size() > 0 && d.device.size() <= 60
-    && d.group in ["Semillero", "Cultivo A", "Cultivo B"]
-    && d.date is string && d.date.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')
-    && d.value is number && d.value >= -20 && d.value <= 80
-    
-    && d.notes is string && d.notes.size() <= 250;
+   return d.keys().hasAll(['course','date','hours','activity'])
+    && d.keys().hasOnly(['course','date','hours','activity'])
+    && d.course is string && d.course.size() > 0 && d.course.size() <= 100
+    && d.course.matches('.*[^ ].*')
+    && d.date is string && d.date.matches('^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$')
+    && d.hours is number && d.hours > 0 && d.hours <= 24
+    && d.activity in ['Teoría', 'Práctica', 'Laboratorio'];
   }
-  match /users/{uid}/readings/{id} {
+  match /users/{uid}/sessions/{id} {
    allow read, delete: if owner(uid);
    allow create, update: if owner(uid) && valid();
   }
