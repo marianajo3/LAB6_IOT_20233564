@@ -223,3 +223,11 @@ No desactives el verificador de compatibilidad para ocultar una mezcla incorrect
 - Requisitos de Boot 3.5: https://docs.spring.io/spring-boot/3.5/system-requirements.html
 - Maven: https://maven.apache.org/install.html
 - Verificación de ID tokens: https://firebase.google.com/docs/auth/admin/verify-id-tokens
+
+## Presentación
+
+[Descargar PowerPoint de 20 diapositivas](../presentaciones/Eureka_EcoHuerto.pptx). Incluye conceptos, configuración, recorrido de llamadas, manejo de fallos y ampliaciones propuestas.
+
+## Validación realizada
+
+Los tres módulos compilan con Maven y las seis pruebas automatizadas pasan (tres de mediciones y tres de umbrales). La demo usa memoria local y no prueba Firebase ni integración Android. Verificar el registro y la llamada entre servicios al ejecutar los comandos de la guía.

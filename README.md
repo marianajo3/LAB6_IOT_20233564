@@ -37,6 +37,7 @@ Comprobación local realizada: `:app:assembleDebug`, `:app:testDebugUnitTest` (4
 
 - [Guía desde cero, comandos y ejemplos para EcoHuerto y sesiones de estudio](docs/eureka/GUIA_COMPLETA.md).
 - [Demo Spring Boot con servidor Eureka, mediciones y alertas](microservices/README.md).
-- Presentación: `docs/presentaciones/Eureka_EcoHuerto.pptx` (se incorpora en esta rama).
+- [Presentación de 20 diapositivas](docs/presentaciones/Eureka_EcoHuerto.pptx).
 
 La extensión corre separada de Android. Los ejemplos no cambian la conexión Firebase del Lab6.
+
