@@ -1,0 +1,15 @@
+server:
+  address: 127.0.0.1
+  port: ${PORT:8761}
+spring:
+  application:
+    name: discovery-server
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

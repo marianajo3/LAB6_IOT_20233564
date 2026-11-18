@@ -32,3 +32,11 @@ La rúbrica menciona Google y Facebook, aunque el enunciado solo exige Google. S
 Código corregido; la conexión al proyecto `lab6-20233564` requiere descargar su archivo Android y habilitar sus proveedores. La compilación por sí sola no demuestra autenticación, persistencia remota ni permisos desplegados. No se ha concedido acceso a terceros ni enviado correos desde este trabajo.
 
 Comprobación local realizada: `:app:assembleDebug`, `:app:testDebugUnitTest` (4 pruebas, 0 fallos) y `:app:lintDebug` completados correctamente. Lint conserva advertencias de mantenimiento (versiones, textos fijos y APIs deprecadas), sin errores. Autenticación y operaciones contra el proyecto remoto pendientes de configuración y prueba real.
+
+## Microservicios y Eureka (material nuevo)
+
+- [Guía desde cero, comandos y ejemplos para EcoHuerto y sesiones de estudio](docs/eureka/GUIA_COMPLETA.md).
+- [Demo Spring Boot con servidor Eureka, mediciones y alertas](microservices/README.md).
+- Presentación: `docs/presentaciones/Eureka_EcoHuerto.pptx` (se incorpora en esta rama).
+
+La extensión corre separada de Android. Los ejemplos no cambian la conexión Firebase del Lab6.
